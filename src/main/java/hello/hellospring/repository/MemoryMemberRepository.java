@@ -3,7 +3,8 @@ package hello.hellospring.repository;
 import hello.hellospring.domain.Member;
 
 import java.util.*;
-
+// 데이터베이스에 접근하는 메서드를 사용하기 위한 인터페이스 이다.
+// db 의 연결, 해제, 자원을 관리하고 crud 작업을 처리한다.
 //MemberRepository interface 의 메소드를 구현한다.
 public class MemoryMemberRepository implements MemberRepository {
 
