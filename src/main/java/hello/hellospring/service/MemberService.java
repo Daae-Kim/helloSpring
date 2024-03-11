@@ -10,7 +10,11 @@ import java.util.Optional;
 // DB 접근과 관련된 부분은 repository 에 작성.
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     public Long join(Member member){
         //같은 이름이 있는 중복 회원은 안된다.
