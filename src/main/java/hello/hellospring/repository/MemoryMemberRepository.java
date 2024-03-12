@@ -6,6 +6,7 @@ import java.util.*;
 // 데이터베이스에 접근하는 메서드를 사용하기 위한 인터페이스 이다.
 // db 의 연결, 해제, 자원을 관리하고 crud 작업을 처리한다.
 //MemberRepository interface 의 메소드를 구현한다.
+//추상화, 확장성을 돕는다. jpa를 사용하게되면 interface를 사용하지는 않음.
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
