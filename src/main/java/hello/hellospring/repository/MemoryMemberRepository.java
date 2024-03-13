@@ -1,6 +1,7 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 // 데이터베이스에 접근하는 메서드를 사용하기 위한 인터페이스 이다.
